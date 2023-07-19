@@ -8,6 +8,10 @@
     font-family: ITC;
     src: url(../Fonts/itcavantgardegothic.woff2);
 }
+@font-face {
+    font-family: Futura ;
+    src: url(../Fonts/futura.woff2);
+}
 
 body {
     margin: 0;
@@ -17,6 +21,14 @@ body {
 
 nav {
     font: var(--Negro);
+    padding: 30px 0;
+    bor
+
+}
+.navdecoracion{
+    font-size: 17px;
+    padding: 7.5px 8px;
+    font-weight:700;
 }
 
 .IHover {
@@ -26,4 +38,10 @@ nav {
 .IHover:hover {
     transform: scale(2);
 }
-.decorationnone{text-decoration: none;}
+.offcanvas-body{
+    color: #000;
+    padding: 20px;
+    text-decoration: none;
+    font-family: "Futura",Arial, Helvetica, sans-serif;
+
+}
