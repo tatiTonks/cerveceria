@@ -1,10 +1,29 @@
-:root{
-    --Negro:#1c1d1d;
-    --blanco:#fff;
+:root {
+    --Negro: #1c1d1d;
+    --blanco: #fff;
 
 }
 
-body{
-margin: 0;
-padding: 0;
+@font-face {
+    font-family: ITC;
+    src: url(../Fonts/itcavantgardegothic.woff2);
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "ITC", Arial, Helvetica, sans-serif;
+}
+
+nav {
+    font: var(--Negro);
+}
+
+.IHover {
+    transition: all 1s;
+}
+
+.IHover:hover {
+    transform: scale(2);
+}
+.decorationnone{text-decoration: none;}
