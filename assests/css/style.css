@@ -18,6 +18,33 @@ body {
   font-family: "ITC", Arial, Helvetica, sans-serif;
 }
 
+/* Modificacion Tatiana */
+nav {
+  font: var(--Negro);
+  padding: 30px 0;
+}
+.navdecoracion{
+  font-size: 17px;
+  padding: 7.5px 8px;
+  font-weight:700;
+}
+
+.IHover {
+  transition: all 1s;
+}
+
+.IHover:hover {
+  transform: scale(2);
+}
+.offcanvas-body{
+  color: #000;
+  padding: 20px;
+  text-decoration: none;
+  font-family: "Futura",Arial, Helvetica, sans-serif;
+
+}
+/* Modificacion Tatiana */
+
 form .LogContainer {
   width: 386px;
 }
@@ -154,31 +181,7 @@ form .LogContainer {
   font-size: 15px;
 }
 
+/* Hasta aca fue la moficiacion de William */
 
 
 
-
-nav {
-    font: var(--Negro);
-    padding: 30px 0;
-}
-.navdecoracion{
-    font-size: 17px;
-    padding: 7.5px 8px;
-    font-weight:700;
-}
-
-.IHover {
-    transition: all 1s;
-}
-
-.IHover:hover {
-    transform: scale(2);
-}
-.offcanvas-body{
-    color: #000;
-    padding: 20px;
-    text-decoration: none;
-    font-family: "Futura",Arial, Helvetica, sans-serif;
-
-}
