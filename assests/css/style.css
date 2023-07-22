@@ -23,10 +23,10 @@ nav {
   font: var(--Negro);
   padding: 30px 0;
 }
-.navdecoracion{
+.navdecoracion {
   font-size: 17px;
   padding: 7.5px 8px;
-  font-weight:700;
+  font-weight: 700;
 }
 
 .IHover {
@@ -36,12 +36,11 @@ nav {
 .IHover:hover {
   transform: scale(2);
 }
-.offcanvas-body{
+.offcanvas-body {
   color: #000;
   padding: 20px;
   text-decoration: none;
-  font-family: "Futura",Arial, Helvetica, sans-serif;
-
+  font-family: "Futura", Arial, Helvetica, sans-serif;
 }
 /* Modificacion Tatiana */
 
@@ -183,5 +182,81 @@ form .LogContainer {
 
 /* Hasta aca fue la moficiacion de William */
 
+section .Comprarcta {
+  display: flex;
+  padding: 11px 23px;
+  margin-left: 80px;
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+  background: rgb(0, 0, 0);
+  transition: 1s;
+  box-shadow: 6px 6px 0 black;
+  transform: skewX(-10deg);
+  border: none;
+}
 
+.Comprarcta:focus {
+  outline: none;
+}
 
+.Comprarcta:hover {
+  transition: 0.5s;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.116);
+}
+
+.Comprarcta .ComprarSecond {
+  transition: 0.5s;
+  margin-right: 0px;
+}
+
+.Comprarcta:hover .ComprarSecond {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.ComprarSpan {
+  transform: skewX(10deg);
+}
+
+.ComprarSecond {
+  width: 20px;
+  margin-left: 30px;
+  position: relative;
+  top: 12%;
+}
+
+.ComprarOne {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.Comprartwo {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.Comprarcta:hover .Comprarthree {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.Comprarcta:hover .Comprarone {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.Comprarcta:hover .Comprartwo {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+.SpanStyle {
+  color: #1c1d1d;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.PStyle {
+  color: #1c1d1d;
+  font-size: 19px;
+  height: 48px;
+}
