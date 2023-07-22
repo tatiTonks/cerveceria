@@ -1,187 +1,213 @@
 :root {
-  --Negro: #1c1d1d;
-  --blanco: #fff;
-}
-
-@font-face {
-  font-family: ITC;
-  src: url(/cerveceria/assests/Fonts/itcavantgardegothic.woff2);
-}
-@font-face {
-  font-family: Futura;
-  src: url(/cerveceria/assests/Fonts/futura.woff2);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "ITC", Arial, Helvetica, sans-serif;
-}
-
-/* Modificacion Tatiana */
-nav {
-  font: var(--Negro);
-  padding: 30px 0;
-}
-.navdecoracion{
-  font-size: 17px;
-  padding: 7.5px 8px;
-  font-weight:700;
-}
-
-.IHover {
-  transition: all 1s;
-}
-
-.IHover:hover {
-  transform: scale(2);
-}
-.offcanvas-body{
-  color: #000;
-  padding: 20px;
-  text-decoration: none;
-  font-family: "Futura",Arial, Helvetica, sans-serif;
-
-}
-/* Modificacion Tatiana */
-
-form .LogContainer {
-  width: 386px;
-}
-
-.InputOutline:focus {
-  box-shadow: none !important;
-  border: 1px solid black;
-}
-
-.Loglabel {
-  margin-bottom: 10px;
-  font-size: 11px;
-  letter-spacing: 2px;
-}
-
-.PassLabel {
-  margin-bottom: 10px;
-  font-size: 13px;
-  font-family: "Futura", Arial, Helvetica, sans-serif;
-}
-
-.btn-background {
-  background-color: black;
-  margin-bottom: 30px;
-  padding: 9px 20px;
-}
-
-.cta {
-  display: flex;
-  padding: 11px 33px;
-  margin-left: 60px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  background: rgb(0, 75, 19);
-  transition: 1s;
-  box-shadow: 6px 6px 0 black;
-  transform: skewX(-10deg);
-  border: none;
-}
-
-.cta:focus {
-  outline: none;
-}
-
-.cta:hover {
-  transition: 0.5s;
-  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.116);
-}
-
-.cta .second {
-  transition: 0.5s;
-  margin-right: 0px;
-}
-
-.cta:hover .second {
-  transition: 0.5s;
-  margin-right: 25px;
-}
-
-.span {
-  transform: skewX(10deg);
-}
-
-.second {
-  width: 20px;
-  margin-left: 30px;
-  position: relative;
-  top: 12%;
-}
-
-.one {
-  transition: 0.4s;
-  transform: translateX(-60%);
-}
-
-.two {
-  transition: 0.5s;
-  transform: translateX(-30%);
-}
-
-.cta:hover .three {
-  animation: color_anim 1s infinite 0.2s;
-}
-
-.cta:hover .one {
-  transform: translateX(0%);
-  animation: color_anim 1s infinite 0.6s;
-}
-
-.cta:hover .two {
-  transform: translateX(0%);
-  animation: color_anim 1s infinite 0.4s;
-}
-
-@keyframes color_anim {
-  0% {
-    fill: white;
+    --Negro: #1c1d1d;
+    --blanco: #fff;
   }
-
-  50% {
-    fill: #7c6830c2;
+  
+  @font-face {
+    font-family: ITC;
+    src: url(/cerveceria/assests/Fonts/itcavantgardegothic.woff2);
   }
-
-  100% {
-    fill: white;
+  @font-face {
+    font-family: Futura;
+    src: url(/cerveceria/assests/Fonts/futura.woff2);
   }
-}
-.h2_ResetPass {
-  font-size: 1.62857em;
-}
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "ITC", Arial, Helvetica, sans-serif;
+  }
+  
+  /* Modificacion Tatiana */
+  nav {
+    font: var(--Negro);
+    padding: 30px 0;
+  }
+  .navdecoracion{
+    font-size: 17px;
+    padding: 7.5px 8px;
+    font-weight:700;
+  }
+  
+  .IHover {
+    transition: all 1s;
+  }
+  
+  .IHover:hover {
+    transform: scale(2);
+  }
+  .offcanvas-body{
+    color: #000;
+    padding: 20px;
+    text-decoration: none;
+    font-family: "Futura",Arial, Helvetica, sans-serif;
+  
+  }
+  .inputletra{
+    border: 0;
+    font-size: 1.71429em;
+    background-color: transparent;
+    outline: 0;
+    padding: 8px 10px
+  }
+  .fotobackground{
+    background-image: url(../Img/backgounddiv.jpg);
+    padding-left: 40px;
+    height: 465px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .cajablanca{
+    background-color: var(--blanco);
+    width: 384px;
+    padding: 40px;
+  }
+  .echemospola{
+    font-family: 'Futura';
+    font-size: 14px;
 
-.PResetPass {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-family: "Futura", Arial, Helvetica, sans-serif;
-}
-
-.Loglabel_ResetPass {
-  margin-bottom: 10px;
-  font-size: 11px;
-  letter-spacing: 2px;
-}
-
-.Loglabel_NewAcc {
-  margin-bottom: 10px;
-  font-size: 11px;
-  letter-spacing: 3px;
-}
-
-.Pclass {
-  margin: 5px 0px;
-  padding-left: 10px;
-  font-size: 15px;
-}
-
-/* Hasta aca fue la moficiacion de William */
-
-
-
+  }
+  /* Modificacion Tatiana */
+  
+  form .LogContainer {
+    width: 386px;
+  }
+  
+  .InputOutline:focus {
+    box-shadow: none !important;
+    border: 1px solid black;
+  }
+  
+  .Loglabel {
+    margin-bottom: 10px;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+  
+  .PassLabel {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-family: "Futura", Arial, Helvetica, sans-serif;
+  }
+  
+  .btn-background {
+    background-color: black;
+    margin-bottom: 30px;
+    padding: 9px 20px;
+  }
+  
+  .cta {
+    display: flex;
+    padding: 11px 33px;
+    margin-left: 60px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background: rgb(0, 75, 19);
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-10deg);
+    border: none;
+  }
+  
+  .cta:focus {
+    outline: none;
+  }
+  
+  .cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.116);
+  }
+  
+  .cta .second {
+    transition: 0.5s;
+    margin-right: 0px;
+  }
+  
+  .cta:hover .second {
+    transition: 0.5s;
+    margin-right: 25px;
+  }
+  
+  .span {
+    transform: skewX(10deg);
+  }
+  
+  .second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+  .one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+  
+  .two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+  
+  .cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+  
+  .cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+  
+  .cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+  
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+  
+    50% {
+      fill: #7c6830c2;
+    }
+  
+    100% {
+      fill: white;
+    }
+  }
+  .h2_ResetPass {
+    font-size: 1.62857em;
+  }
+  
+  .PResetPass {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Futura", Arial, Helvetica, sans-serif;
+  }
+  
+  .Loglabel_ResetPass {
+    margin-bottom: 10px;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+  
+  .Loglabel_NewAcc {
+    margin-bottom: 10px;
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+  
+  .Pclass {
+    margin: 5px 0px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  
+  /* Hasta aca fue la moficiacion de William */
+  
+  
+  
+  
