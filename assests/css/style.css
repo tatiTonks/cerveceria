@@ -260,3 +260,73 @@ section .Comprarcta {
   font-size: 19px;
   height: 48px;
 }
+
+.CatalogP {
+  font-size: 12px;
+  font-family: "futura", Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.CatalogH3 {
+  font-size: 30px;
+  font-family: "ITC", Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+.Price {
+  font-size: 20px;
+  font-family: "futura", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.input-number {
+  width: 80px;
+  padding: 0 12px;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+  border: 1px solid #ccc;
+  height: 40px;
+  user-select: none;
+}
+
+.input-number-decrement,
+.input-number-increment {
+  display: inline-block;
+  width: 30px;
+  line-height: 38px;
+  background: #f1f1f1;
+  color: #444;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:active {
+    background: #ddd;
+  }
+}
+
+.input-number-decrement {
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-number-increment {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.textCart {
+  font-size: 14px;
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+}
+
+.Icontext {
+  font-family: "Futura", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
