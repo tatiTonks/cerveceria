@@ -68,6 +68,13 @@
     font-size: 14px;
 
   }
+  .fotobackground2{
+    background-image: url(../Img/backgrounddiv2.jpg);
+    padding-left: 40px;
+    height: 465px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;}
   /* Modificacion Tatiana */
   
   form .LogContainer {
