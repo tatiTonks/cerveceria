@@ -56,6 +56,9 @@
     outline:none;
     box-shadow: none;
   }
+  /* .subirlo{
+    transform: translateY(-178px);
+  } */
   .fotobackground{
     background-image: url(../Img/backgounddiv.jpg);
     padding-left: 40px;
