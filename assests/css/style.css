@@ -44,11 +44,17 @@
   
   }
   .inputletra{
+
     border: 0;
     font-size: 1.71429em;
     background-color: transparent;
     outline: 0;
     padding: 8px 10px
+  }
+  .inputletra:focus{
+    border-color:none;
+    outline:none;
+    box-shadow: none;
   }
   .fotobackground{
     background-image: url(../Img/backgounddiv.jpg);
