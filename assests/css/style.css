@@ -73,6 +73,29 @@ nav {
   font-family: "Futura";
   font-size: 14px;
 }
+
+/* 
+Alejandra */
+
+.titulo {
+  color: #1c1d1d;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+
+.par {
+  color: #1c1d1d;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400
+}   
+
+.micro {
+  size: 500px 301px;
+}
+/* 
+Alejandra */
 .fotobackground2 {
   background-image: url(../Img/backgrounddiv2.jpg);
   padding-left: 40px;
@@ -80,6 +103,14 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+#sliderPolas{
+  padding: 250px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 2s;
+
 }
 /* Modificacion Tatiana */
 
