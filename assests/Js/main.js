@@ -46,18 +46,35 @@ Botno debera tener algo asi
 <button onclick="window.location.href='/page2'">Continue</button>
 */
 
-// let credentials = { Username: "Admin", Password: "123" };
-// let EmailInput = document.querySelector("#form2Example1");
-// let PassInput = document.querySelector("#form2Example2");
-// let LoginAccess = document.querySelector("#BtnIniciar");
+let credentials = { Username: "Admin", Password: "123" };
+let EmailInput = document.querySelector("#form2Example1");
+let PassInput = document.querySelector("#form2Example2");
+let LoginAccess = document.querySelector("#BtnIniciar");
 
-// LoginAccess.addEventListener("click", (e) => {
-//   e.preventDefault();
-// });
+LoginAccess.addEventListener("click", function () {
+  let emailValue = EmailInput.value;
+  let passValue = PassInput.value;
 
-// if (EmailInput.value = credentials.Username && PassInput.value =)
-
-// console.log(credentials.Username);
+  if (
+    emailValue === credentials.Username &&
+    passValue === credentials.Password
+  ) {
+    window.location.href = "index.html";
+  } else {
+    Swal.fire({
+      title: "<strong>ERROR</strong>",
+      icon: "error",
+      html: "Usuario o contraseña incorrectos. Por favor, inténtalo nuevamente. ",
+      showCloseButton: true,
+      showCancelButton: false,
+      focusConfirm: false,
+      confirmButtonText: "Aceptar",
+      confirmButtonAriaLabel: "Thumbs up, great!",
+      cancelButtonText: '<i class="fa fa-thumbs-down"> Cancelar</i>',
+      cancelButtonAriaLabel: "Thumbs down",
+    });
+  }
+});
 
 // Taitana modificaciones
 
@@ -88,13 +105,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-
 /* ALejandra Updates */
 
 const images = [
-  { url: '1.webp', estilo:'background-position-y: 30%', alt: 'foto 1' },
-  { url: '2.webp', estilo: 'background-position-y: 70%',alt: 'foto 2' },
+  {
+    url: "../Img/section/2.webp",
+    estilo: "background-position-y: 30%",
+    alt: "foto 1",
+  },
+  {
+    url: "../Img/section/2.webp",
+    estilo: "background-position-y: 70%",
+    alt: "foto 2",
+  },
 ];
 let previousIndex = -1; // Índice de la imagen anterior
 function getRandomIndex() {
@@ -110,11 +133,13 @@ function changeBackground() {
   const randomIndex = getRandomIndex();
   const selectedImage = images[randomIndex];
 
+  let seccionFondos = document.querySelector("#sliderPolas");
 
-  let seccionFondos = document.querySelector("#sliderPolas")
-
-  seccionFondos.setAttribute("style", `background-image: url('assets/img/${selectedImage.url}'); ${selectedImage.estilo}`)
+  seccionFondos.setAttribute(
+    "style",
+    `background-image: url('assets/img/${selectedImage.url}'); ${selectedImage.estilo}`
+  );
   previousIndex = randomIndex; // Actualiza el índice anterior
 }
 setInterval(changeBackground, 3000);
-changeBackground()
+changeBackground();
