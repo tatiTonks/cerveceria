@@ -58,3 +58,32 @@ Botno debera tener algo asi
 // if (EmailInput.value = credentials.Username && PassInput.value =)
 
 // console.log(credentials.Username);
+
+// Taitana modificaciones
+
+const tooltipTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+  (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);
+
+window.addEventListener("scroll", () => {
+  let scrollY = window.scrollY || window.pageYOffset; // Scroll vertical (para navegadores antiguos y modernos)
+  let elemento = document.querySelector("#navbarPola");
+  let enlaces = document.querySelectorAll(".nav-link");
+
+  if (scrollY <= 800) {
+    elemento.classList.remove("bg-white");
+    elemento.setAttribute("data-bs-theme", "dark");
+    enlaces.forEach((enlaceNav) => {
+      enlaceNav.classList.add("text-white");
+    });
+  } else {
+    elemento.classList.add("bg-white");
+    elemento.removeAttribute("data-bs-theme");
+    enlaces.forEach((enlaceNav) => {
+      enlaceNav.classList.remove("text-white");
+    });
+  }
+});
