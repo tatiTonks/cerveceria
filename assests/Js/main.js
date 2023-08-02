@@ -113,7 +113,7 @@ function changeBackground() {
 
   let seccionFondos = document.querySelector("#sliderPolas")
 
-  seccionFondos.setAttribute("style", `background-image: url('assets/img/${selectedImage.url}'); ${selectedImage.estilo}`)
+  seccionFondos.setAttribute("style", `background-image: url('assests/Img/section/${selectedImage.url}'); ${selectedImage.estilo}`)
   previousIndex = randomIndex; // Actualiza el índice anterior
 }
 setInterval(changeBackground, 3000);
