@@ -4,20 +4,164 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pola del Pub</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assests/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="assests/Img/favicon.png"
-      type="image/x-icon"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" href="assests/Img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="assests/css/style.css">
   </head>
   <body>
+
+
+    
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" id="navbarPola">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="assests/Img/logo.avif" alt="Pola del Pub" width="216" height="68"
+                  class="d-inline-block align-text-top" onclick="location.href='index.html'">
+          </a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="d-flex justify-content-center align-items-center">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 navdecoracion">
+                      <li class="nav-item">
+                          <a class="nav-link text-dark" aria-current="page" href="#">Polas</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-dark" href="#">Microcervecerias</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-dark" href="#">Pubs</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-dark" href="#">Merch</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-dark" href="#">Blog</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="d-flex justify-content-end align-items-center">
+              <button class="btn d-flex flex-column justify-content-center align-items-center"
+                  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Iniciar sesión">
+                  <a href="Login.html"><i class="fa-regular fa-user IHover text-dark"></i></a>
+              </button>
+              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                  aria-controls="offcanvasTop">
+                  <i class="fa-solid fa-magnifying-glass IHover" style="color: #080808;"></i>
+              </button>
+              <button type="button" class="btn position-relative" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip" data-bs-title="Pola Cart">
+                  <i class="fa-solid fa-beer-mug-empty IHover" style="color: #000000;"></i>
+              </button>
+              <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                  class="d-block d-lg-none btn d-flex flex-column justify-content-center align-items-center"
+                  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Iniciar sesión">
+                  <i class="fa-solid fa-bars"></i>
+              </button>
+          </div>
+      </div>
+
+      </div>
+
+  </nav>
+
+  <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menú</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul>
+              <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                  class="d-block d-lg-none btn d-flex flex-column justify-content-center align-items-center"
+                  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                  data-bs-title="polas">
+                  <a class="text-black" href=""><h5 class="">Polas</h5></a>
+              </button>
+              <div class="border w-100"></div>
+              <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                  class="d-block d-lg-none btn d-flex flex-column justify-content-center align-items-center"
+                  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Otras Bebidas">
+                  <a class="text-black" href=""><h5>Otras Bebidas</h5></a>
+              </button>
+              <div class="border w-100"></div>
+              <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                  class="d-block d-lg-none btn d-flex flex-column justify-content-center align-items-center"
+                  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Buscar">
+                  <a class="text-black" href=""><h5>Microcervecerías</h5></a>
+              </button>
+              <div class="border w-100"></div>
+              <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                  class="d-block d-lg-none btn d-flex flex-column justify-content-center align-items-center"
+                  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                  data-bs-title="pubs">
+                  <a class="text-black" href=""><h5>Pubs</h5></a>
+              </button>
+              <div class="border w-100"></div>
+              <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                  class="d-block d-lg-none btn d-flex flex-column justify-content-center align-items-center"
+                  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                  data-bs-title="merch">
+                  <a class="text-black" href=""><h5>Merch</h5></a>
+              </button>
+              <div class="border w-100"></div>
+              <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                  class="d-block d-lg-none btn d-flex flex-column justify-content-center align-items-center"
+                  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Iniciar sesión">
+                  <a class="text-black" href=""><h5>Blog</h5></a>
+              </button>
+              <div class="border w-100"></div>
+              <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                  aria-controls="offcanvasWithBothOptions"
+                  class="d-block d-lg-none btn d-flex flex-column justify-content-center align-items-center"
+                  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Iniciar sesión">
+                  <a class="text-black" href="Login.html"><h5>Ingresar</h5></a>
+              </button>
+              <div class="border w-100"></div>
+              <div>
+                  <a href="#"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
+              </div>
+          
+
+          </ul>
+      </div>
+  </div>
+
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="d-flex align-content-center justify-content-center align-ity w-100 inputcentrado align-items-center py-5 ms-3">
+          <div class="inputcentrado w-20 d-flex align-content-center justify-content-center">
+              <i class="fa-solid fa-magnifying-glass mx-3" style="color: #000000;"></i> 
+          </div>
+              <div class="w-100 d-flex align-content-center justify-content-center "><input type="text"
+                  class="form-control inputletra" placeholder="Buscar tu pola" aria-label="search input"> 
+              </div>
+          </div>
+      </div>
+     <hr>
     <div class="d-flex flex-column align-items-center my-0 mx-auto px-5 py-5">
       <!-- margin: 0 24.5px;
     padding: 60px 40px; -->
@@ -61,10 +205,83 @@
       </form>
     </div>
 
+    <footer class="ftr text-white FooterHead" >
+  
+      <div class="container text-left">
+          <div class="row">
+              <div class="col">
+                  <head class="FooterHeader">
+                  SOBRE POLA
+              </head>  
+
+                  <div class="col footerfont" >
+                  <p> Polas </p>
+                  <p> Otras Bebidas </p> 
+                  <p> Microcervecería </p>
+                  <p> Pubs </p>
+                  <p> Merch </p>
+                  <p> Blog </p>
+                  </div>
+              </div>
+
+              <div class="col ">
+                  <header class="FooterHeader">
+                      LEGALES
+                    </header>
+                    <div class="footerfont">
+
+                        <p> Términos y condiciones
+                        <p> Política de tratamiento de datos </p>
+                        <p>Superintendencia de Industria y Comercio</p>
+                        <p> Do not sell my personal information</p>
+
+                    </div>
+              </div>
+
+              <div class="col ps-5">
+                  <header class="EscribemosClass">
+                      ESCRÍBENOS</header>
+                  <p class="footerfont"> Contacto </p>
+              </div>
+
+              <div class="col footerfont">
+                  <p class="FooterP"> The Pub SAS. Calle 85a #22-21. Bogotá,Colombia. </p>
+                  <p class="FooterP">info@thepub.com.co</p> 
+                  <p class="FooterP">+57 3053936650 </p>
+              </div>
+
+              <div class="col">
+                  <section class="d-flex justify-content-center align-items-center flex-column">
+                      <div>
+                          <img src="assests/Img/1ftr.webp" alt="">
+                      </div>
+                      <div class="d-flex pt-3">
+                          <a href="https://www.facebook.com/echandopola" target="_blank">
+                          <img src="assests/Img/simbolo-de-la-aplicacion-de-facebook.png">
+                          </a>
+
+                          <a href="https://www.instagram.com/echandopola/" target="_blank">
+                          <img src="assests/Img/instagram.png" alt="">
+                          </a>
+                      </div>
+                  </section>
+              </div>
+
+              <section class="d-flex p-lg-1">
+              <img src="assests/Img/SIC.png" class="FooterImg">
+              </section>
+              
+          
+              <p class="FooterWarning"> EL EXCESO DE ALCOHOL ES PERJUDICIAL PARA LA SALUD. PROHÍBASE EL EXPENDIO DE <br> 
+              BEBIDAS EMBRIAGANTES A MENORES DE EDAD.</p>
+
+  </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="assests/Js/btn.js"></script>
   </body>
 </html>

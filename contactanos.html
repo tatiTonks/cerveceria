@@ -12,32 +12,38 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="shortcut icon" href="assests/Img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assests/css/contacstyle.css">
+    <link rel="stylesheet" href="assests/css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="white" id="navbarPola">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" id="navbarPola">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assests/Img/logo.avif" alt="Pola del Pub" width="216" height="68"
-                    class="d-inline-block align-text-top">
+                    class="d-inline-block align-text-top" onclick="location.href='index.html'">
             </a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
             <div class="d-flex justify-content-center align-items-center">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 navdecoracion">
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#">Polas</a>
+                            <a class="nav-link text-dark" aria-current="page" href="#">Polas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Microcervecerias</a>
+                            <a class="nav-link text-dark" href="#">Microcervecerias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Pubs</a>
+                            <a class="nav-link text-dark" href="#">Pubs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Merch</a>
+                            <a class="nav-link text-dark" href="#">Merch</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Blog</a>
+                            <a class="nav-link text-dark" href="#">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -154,14 +160,15 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="w-100 text-white contactanosDiv">
+        <hr class="mb-0">
+
+    <div class="w-100 text-white contactanosDiv mt-0">
         <div>
             <h1 class="d-flex align-bottom contactanosLetra">Contáctanos</h1>
         </div>
     </div>
-    <div class="container">
-        <div class="d-flex justify-content-center align-content-lg-start fondoBlanco p-4">
+    <div class="container mb-3">
+        <div class="d-flex justify-content-center align-content-lg-start fondoBlanco p-4 ">
             <div">
                 <h2 class="tipoTexto">Visitanos</h2>
             </div><br>
@@ -173,7 +180,77 @@
     
 
 
+    <footer class="ftr text-white FooterHead" >
+  
+        <div class="container text-left">
+            <div class="row">
+                <div class="col">
+                    <head class="FooterHeader">
+                    SOBRE POLA
+                </head>  
 
+                    <div class="col footerfont" >
+                    <p> Polas </p>
+                    <p> Otras Bebidas </p> 
+                    <p> Microcervecería </p>
+                    <p> Pubs </p>
+                    <p> Merch </p>
+                    <p> Blog </p>
+                    </div>
+                </div>
+
+                <div class="col ">
+                    <header class="FooterHeader">
+                        LEGALES
+                      </header>
+                      <div class="footerfont">
+
+                          <p> Términos y condiciones </p>
+                          <p> Política de tratamiento de datos </p>
+                          <p>Superintendencia de Industria y Comercio</p>
+                          <p> Do not sell my personal information</p>
+
+                      </div>
+                </div>
+
+                <div class="col ps-5">
+                    <header class="EscribemosClass">
+                        ESCRÍBENOS</header>
+                    <p class="footerfont" onclick="location.href='contactanos.html'" > Contacto </p>
+                </div>
+
+                <div class="col footerfont">
+                    <p class="FooterP"> The Pub SAS. Calle 85a #22-21. Bogotá,Colombia. </p>
+                    <p class="FooterP">info@thepub.com.co</p> 
+                    <p class="FooterP">+57 3053936650 </p>
+                </div>
+
+                <div class="col">
+                    <section class="d-flex justify-content-center align-items-center flex-column">
+                        <div>
+                            <img src="assests/Img/1ftr.webp" alt="">
+                        </div>
+                        <div class="d-flex pt-3">
+                            <a href="https://www.facebook.com/echandopola" target="_blank">
+                            <img src="assests/Img/simbolo-de-la-aplicacion-de-facebook.png">
+                            </a>
+
+                            <a href="https://www.instagram.com/echandopola/" target="_blank">
+                            <img src="assests/Img/instagram.png" alt="">
+                            </a>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="d-flex p-lg-1">
+                <img src="assests/Img/SIC.png" class="FooterImg">
+                </section>
+                
+            
+                <p class="FooterWarning"> EL EXCESO DE ALCOHOL ES PERJUDICIAL PARA LA SALUD. PROHÍBASE EL EXPENDIO DE <br> 
+                BEBIDAS EMBRIAGANTES A MENORES DE EDAD.</p>
+
+    </footer>
 
 
 
@@ -181,6 +258,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-  <script src="../assests/Js/map.js"></script>
+  <script src="assests/Js/map.js"></script>
 </body>
 </html>

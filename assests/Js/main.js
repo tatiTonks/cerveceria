@@ -1,40 +1,3 @@
-(function () {
-  window.inputNumber = function (el) {
-    var min = el.attr("min") || false;
-    var max = el.attr("max") || false;
-
-    var els = {};
-
-    els.dec = el.prev();
-    els.inc = el.next();
-
-    el.each(function () {
-      init($(this));
-    });
-
-    function init(el) {
-      els.dec.on("click", decrement);
-      els.inc.on("click", increment);
-
-      function decrement() {
-        var value = el[0].value;
-        value--;
-        if (!min || value >= min) {
-          el[0].value = value;
-        }
-      }
-
-      function increment() {
-        var value = el[0].value;
-        value++;
-        if (!max || value <= max) {
-          el[0].value = value++;
-        }
-      }
-    }
-  };
-})();
-
 // inputNumber($(".input-number"));
 
 /* Creacion del Log In
@@ -88,13 +51,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-
 /* ALejandra Updates */
 
 const images = [
-  { url: '1.webp', estilo:'background-position-y: 30%', alt: 'foto 1' },
-  { url: '2.webp', estilo: 'background-position-y: 70%',alt: 'foto 2' },
+  {
+    url: "2.webp",
+    estilo: "background-position-y: 30%",
+    alt: "foto 1",
+  },
+  {
+    url: "2.webp",
+    estilo: "background-position-y: 70%",
+    alt: "foto 2",
+  },
 ];
 let previousIndex = -1; // Índice de la imagen anterior
 function getRandomIndex() {
@@ -110,11 +79,13 @@ function changeBackground() {
   const randomIndex = getRandomIndex();
   const selectedImage = images[randomIndex];
 
+  let seccionFondos = document.querySelector("#sliderPolas");
 
-  let seccionFondos = document.querySelector("#sliderPolas")
-
-  seccionFondos.setAttribute("style", `background-image: url('assests/Img/section/${selectedImage.url}'); ${selectedImage.estilo}`)
+  seccionFondos.setAttribute(
+    "style",
+    `background-image: url('assests/Img/section/${selectedImage.url}'); ${selectedImage.estilo}`
+  );
   previousIndex = randomIndex; // Actualiza el índice anterior
 }
 setInterval(changeBackground, 3000);
-changeBackground()
+changeBackground();
