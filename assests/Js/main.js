@@ -36,7 +36,7 @@ window.addEventListener("scroll", () => {
   let elemento = document.querySelector("#navbarPola");
   let enlaces = document.querySelectorAll(".nav-link");
 
-  if (scrollY <= 800) {
+  if (scrollY <= 558) {
     elemento.classList.remove("bg-white");
     elemento.setAttribute("data-bs-theme", "dark");
     enlaces.forEach((enlaceNav) => {

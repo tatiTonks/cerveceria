@@ -32,19 +32,19 @@
 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 navdecoracion">
                         <li class="nav-item">
-                            <a class="nav-link text-white" aria-current="page" href="#">Polas</a>
+                            <a class="nav-link text-white"id="btn-Polas" style="position: relative;" aria-current="page">Polas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Microcervecerias</a>
+                            <a class="nav-link text-white"id="btn-Microcervecerias" style="position: relative;" >Microcervecerias</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Pubs</a>
+                            <a class="nav-link text-white"id="btn-Pubs" style="position: relative;" >Pubs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Merch</a>
+                            <a class="nav-link text-white"id="btn-Merch" style="position: relative;" >Merch</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="contactanos.html">Contáctanos</a>
+                            <a class="nav-link text-white" style="position: relative;" href="contactanos.html">Contáctanos</a>
                         </li>
                     </ul>
                 </div>
@@ -196,10 +196,10 @@
             <div class="d-flex flex-wrap justify-content-evenly">
                 <div class=" col-4 px-2">
                     <img src="assests/Img/Productos/polamiel.webp" class="w-100 py-4" alt="">
-                    <h3 style="color: #1c1d1d; text-align: center; font-size: 26px;">SAISON CON MIEL</h3>
+                    <h3 class="catalogh3">SAISON CON MIEL</h3>
                     <!-- Boton Comprar -->
                     <div>
-                        <button class="Comprarcta" onclick="location.href='Catalog.html'">
+                        <button class="Comprarcta " onclick="location.href='Catalog.html'">
                           <span class="ComprarSpan">Comprar 4-Pack</span>
                           <span class="ComprarSecond">
                             <svg
@@ -239,8 +239,8 @@
                       </div>
                 </div>
                 <div class="col-4 px-2">
-                    <img src="assests/Img/Productos/polarubia.webp" class="w-100 py-4" alt="">
-                    <h3 style="color: #1c1d1d; text-align: center;">RUBIA ORIGINAL</h3>
+                    <img src="assests/Img/Productos/polarubia.webp" class="w-100 py-4 " alt="">
+                    <h3 class="catalogh3">RUBIA ORIGINAL</h3>
                     <div>
                         <button class="Comprarcta" onclick="location.href='Catalog.html'">
                           <span class="ComprarSpan">Comprar 4-Pack</span>
@@ -282,8 +282,8 @@
                       </div>
                 </div>
                 <div class="col-4 px-2">
-                    <img src="assests/Img/Productos/polaroja.webp" class="w-100 py-4" alt="">
-                    <h3 style="color: #1c1d1d; text-align: center;">AMERICAN PALE ALE</h3>
+                    <img src="assests/Img/Productos/polaroja.webp" class="w-100 py-4 " alt="">
+                    <h3 class="catalogh3">AMERICAN PALE ALE</h3>
                     <div>
                         <button class="Comprarcta" onclick="location.href='Catalog.html'">
                           <span class="ComprarSpan">Comprar 4-Pack</span>
@@ -326,8 +326,8 @@
                 </div>
 
                 <div class=" col-4 px-2">
-                    <img src="assests/Img/Productos/polablanca.webp" class="w-100 py-4" alt="">
-                    <h3 style="color: #1c1d1d; text-align: center; font-size: 26px;">WITBIER TRIGO</h3>
+                    <img src="assests/Img/Productos/polablanca.webp" class="w-100 py-4 " alt="">
+                    <h3 class="catalogh3">WITBIER TRIGO</h3>
                     <!-- Boton Comprar -->
                     <div>
                         <button class="Comprarcta" onclick="location.href='Catalog.html'">
@@ -370,8 +370,8 @@
                       </div>
                 </div>
                 <div class="col-4 px-2">
-                    <img src="assests/Img/Productos/polaverde.webp" class="w-100 py-4" alt="">
-                    <h3 style="color: #1c1d1d; text-align: center;">INDIA PALE ALE</h3>
+                    <img src="assests/Img/Productos/polaverde.webp" class="w-100 py-4 " alt="">
+                    <h3 class="catalogh3">INDIA PALE ALE</h3>
                     <div>
                         <button class="Comprarcta" onclick="location.href='Catalog.html'">
                           <span class="ComprarSpan">Comprar 4-Pack</span>
@@ -413,8 +413,8 @@
                       </div>
                 </div>
                 <div class="col-4 px-2">
-                    <img src="assests/Img/Productos/polanegra.webp" class="w-100 py-4" alt="">
-                    <h3 style="color: #1c1d1d; text-align: center;">COFFEE MILK STOUT</h3>
+                    <img src="assests/Img/Productos/polanegra.webp" class="w-100 py-4 " alt="">
+                    <h3 class="catalogh3">COFFEE MILK STOUT</h3>
                     <div>
                         <button class="Comprarcta" onclick="location.href='Catalog.html'">
                           <span class="ComprarSpan">Comprar 4-Pack</span>
@@ -632,7 +632,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script src="assests/Js/jquery-1.12.3.min.js"></script>    
     <script src="assests/Js/main.js"></script>
+    <script src="assests/Js/NavEf.js"></script>
+    
 </body>
 </html>
