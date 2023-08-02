@@ -4,20 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pola del Pub</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assests/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="assests/Img/favicon.png"
-      type="image/x-icon"
-    />
+    <<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="shortcut icon" href="assests/Img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="assests/css/style.css">
   </head>
   <body>
+
     <div class="d-flex flex-column align-items-center my-0 mx-auto px-5 py-5">
       <!-- margin: 0 24.5px;
     padding: 60px 40px; -->
@@ -41,9 +37,9 @@
 
           <!-- Password input -->
           <div class="form-outline mb-4">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between" >
               <label class="Loglabel" for="form2Example2">CONTRASEÑA</label>
-              <label class="PassLabel" for="form2Example2"
+              <label class="PassLabel" for="form2Example2" onclick="location.href='ResetPass.html'"
                 >¿Olvidó su contraseña?</label
               >
             </div>
@@ -67,8 +63,8 @@
           </div>
 
           <div>
-            <button class="cta">
-              <span class="span">Crear cuenta</span>
+            <button type="button" class="cta" onclick="location.href='NewAcc.html'">
+              <span class="span" >Crear cuenta</span>
               <span class="second">
                 <svg
                   width="50px"
@@ -187,6 +183,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="assests/Js/main.js"></script>
+    <script src="assests/Js/btn.js"></script>
+    <script src="assests/Js/login.js"></script>
   </body>
 </html>

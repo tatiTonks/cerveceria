@@ -1,80 +1,4 @@
-(function () {
-  window.inputNumber = function (el) {
-    var min = el.attr("min") || false;
-    var max = el.attr("max") || false;
-
-    var els = {};
-
-    els.dec = el.prev();
-    els.inc = el.next();
-
-    el.each(function () {
-      init($(this));
-    });
-
-    function init(el) {
-      els.dec.on("click", decrement);
-      els.inc.on("click", increment);
-
-      function decrement() {
-        var value = el[0].value;
-        value--;
-        if (!min || value >= min) {
-          el[0].value = value;
-        }
-      }
-
-      function increment() {
-        var value = el[0].value;
-        value++;
-        if (!max || value <= max) {
-          el[0].value = value++;
-        }
-      }
-    }
-  };
-})();
-
 // inputNumber($(".input-number"));
-
-/* Creacion del Log In
-
-User_id: Admin
-Password: Admin123
-
-Botno debera tener algo asi 
-<button onclick="window.location.href='/page2'">Continue</button>
-*/
-
-let credentials = { Username: "Admin", Password: "123" };
-let EmailInput = document.querySelector("#form2Example1");
-let PassInput = document.querySelector("#form2Example2");
-let LoginAccess = document.querySelector("#BtnIniciar");
-
-LoginAccess.addEventListener("click", function () {
-  let emailValue = EmailInput.value;
-  let passValue = PassInput.value;
-
-  if (
-    emailValue === credentials.Username &&
-    passValue === credentials.Password
-  ) {
-    window.location.href = "index.html";
-  } else {
-    Swal.fire({
-      title: "<strong>ERROR</strong>",
-      icon: "error",
-      html: "Usuario o contraseña incorrectos. Por favor, inténtalo nuevamente. ",
-      showCloseButton: true,
-      showCancelButton: false,
-      focusConfirm: false,
-      confirmButtonText: "Aceptar",
-      confirmButtonAriaLabel: "Thumbs up, great!",
-      cancelButtonText: '<i class="fa fa-thumbs-down"> Cancelar</i>',
-      cancelButtonAriaLabel: "Thumbs down",
-    });
-  }
-});
 
 // Taitana modificaciones
 
@@ -109,12 +33,12 @@ window.addEventListener("scroll", () => {
 
 const images = [
   {
-    url: "../Img/section/2.webp",
+    url: "2.webp",
     estilo: "background-position-y: 30%",
     alt: "foto 1",
   },
   {
-    url: "../Img/section/2.webp",
+    url: "2.webp",
     estilo: "background-position-y: 70%",
     alt: "foto 2",
   },
@@ -137,7 +61,7 @@ function changeBackground() {
 
   seccionFondos.setAttribute(
     "style",
-    `background-image: url('assets/img/${selectedImage.url}'); ${selectedImage.estilo}`
+    `background-image: url('assets/Img/${selectedImage.url}'); ${selectedImage.estilo}`
   );
   previousIndex = randomIndex; // Actualiza el índice anterior
 }
