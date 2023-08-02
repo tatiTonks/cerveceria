@@ -1,4 +1,4 @@
-let map = L.map('map').setView([4.667790, -74.053640], 13);
+let map = L.map('map').setView([4.667790, -74.053640], 14);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -10,7 +10,7 @@ let locations = [
     { name: "Pepe Sierra", lat: 4.698150, lng: -74.047610, direccion: 'Cl. 116 # 18-12, Bogotá', },
     { name: "Quinta Camacho", lat: 4.654990, lng: -74.059290, direccion: 'Cra. 10a # 70 - 48, Bogotá', },
     { name: "San Felipe", lat: 4.667900, lng: -74.063750, direccion: 'Cl. 78 #23-55, Bogotá',  },
-    { name: "La Candelaria", lat: 4.597240, lng: -74.071110,  direccion: "Cra. 3 #12-37, La Candelaria, Bogotá" }
+    { name: "Parque de la 93", lat: 4.675700, lng: -74.048850,  direccion: "Cra. 12 #93-43, Localidad de Chapinero, Bogotá, Cundinamarca" }
   ];
   
   locations.forEach(function(locations) {
