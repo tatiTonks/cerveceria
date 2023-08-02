@@ -10,7 +10,11 @@ let locations = [
     { name: "Pepe Sierra", lat: 4.698150, lng: -74.047610, direccion: 'Cl. 116 # 18-12, Bogotá', },
     { name: "Quinta Camacho", lat: 4.654990, lng: -74.059290, direccion: 'Cra. 10a # 70 - 48, Bogotá', },
     { name: "San Felipe", lat: 4.667900, lng: -74.063750, direccion: 'Cl. 78 #23-55, Bogotá',  },
+<<<<<<< HEAD
     { name: "Parque de la 93", lat: 4.675700, lng: -74.048850,  direccion: "Cra. 12 #93-43, Localidad de Chapinero, Bogotá, Cundinamarca" }
+=======
+    { name: "Parque de la 93", lat: 4.675700, lng: -74.048851,  direccion: "Cra. 12 #93-43, Bogotá" }
+>>>>>>> master
   ];
   
   locations.forEach(function(locations) {
