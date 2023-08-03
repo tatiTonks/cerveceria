@@ -11,8 +11,13 @@ document.getElementById("crearBoton").addEventListener("click", function () {
     if (!correo) camposFaltantes.push("Correo Electrónico");
     if (!contraseña) camposFaltantes.push("Contraseña");
 
-    alert("Faltan los siguientes campos: " + camposFaltantes.join(", "));
+    // alert("Faltan los siguientes campos: " + camposFaltantes.join(", "));
+    Swal.fire({
+      icon: "error",
+      title: `Faltan los siguientes campos: ${camposFaltantes.join(", ")};`,
+    });
   } else {
     alert("Formulario enviado con éxito");
+    document.querySelector("#formRegistro").reset();
   }
 });

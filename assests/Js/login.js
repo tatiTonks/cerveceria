@@ -12,7 +12,7 @@ LoginAccess.addEventListener("click", function () {
   ) {
     Swal.fire({
       title: "<strong>Bienvenido!</strong>",
-      icon: "error",
+      icon: "success",
       html: "Acceso concedido",
       showCloseButton: true,
       showCancelButton: false,

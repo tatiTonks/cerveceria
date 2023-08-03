@@ -32,45 +32,65 @@ const tooltipList = [...tooltipTriggerList].map(
 );
 
 window.addEventListener("scroll", () => {
+  let elementoSlider = document.querySelector("#carouselPola");
+  let altoElemento = elementoSlider.offsetHeight;
   let scrollY = window.scrollY || window.pageYOffset; // Scroll vertical (para navegadores antiguos y modernos)
   let elemento = document.querySelector("#navbarPola");
   let enlaces = document.querySelectorAll(".nav-link");
+  // console.log(scrollY);
 
-  if (scrollY <= 558) {
-    elemento.classList.remove("bg-white");
-    elemento.setAttribute("data-bs-theme", "dark");
-    enlaces.forEach((enlaceNav) => {
-      enlaceNav.classList.add("text-white");
-    });
+  if (altoElemento >= 500) {
+    if (scrollY <= 558) {
+      elemento.classList.remove("bg-white");
+      elemento.setAttribute("data-bs-theme", "dark");
+      enlaces.forEach((enlaceNav) => {
+        enlaceNav.classList.add("text-white");
+      });
+    } else {
+      elemento.classList.add("bg-white");
+      elemento.removeAttribute("data-bs-theme");
+      enlaces.forEach((enlaceNav) => {
+        enlaceNav.classList.remove("text-white");
+      });
+    }
   } else {
-    elemento.classList.add("bg-white");
-    elemento.removeAttribute("data-bs-theme");
-    enlaces.forEach((enlaceNav) => {
-      enlaceNav.classList.remove("text-white");
-    });
+    if (scrollY <= 200) {
+      elemento.classList.remove("bg-white");
+      elemento.setAttribute("data-bs-theme", "dark");
+      enlaces.forEach((enlaceNav) => {
+        enlaceNav.classList.add("text-white");
+      });
+    } else {
+      elemento.classList.add("bg-white");
+      elemento.removeAttribute("data-bs-theme");
+      enlaces.forEach((enlaceNav) => {
+        enlaceNav.classList.remove("text-white");
+      });
+    }
   }
 });
 
 /* Alejandra Updates */
 
-Swal.fire({
-  title: 'Bienvenido a Pola del Pub',
-  text: "El exceso de alcohol es perjudicial para la salud. Prohíbase el expendio de bebidas embriagantes a menores de edad.",
-  showCancelButton: true,
-  confirmButtonColor: '#1c1d1d',
-  cancelButtonColor: '#1c1d1d',
-  confirmButtonText: 'Tengo +18 años',
-  cancelButtonText: 'Soy menor de edad'
-}).then((result) => {
-  if (result.isConfirmed) {
-    // Si hace clic en el botón "Tengo +18 años", dejarlo entrar a la página de modo normal.
-    // No mostramos ninguna otra alerta.
-  } else {
-    // Si hace clic en el botón "Soy menor de edad", redirigirlo a otra página.
-    window.location.href = 'https://i.pinimg.com/564x/55/e8/42/55e8422f53f322c307443aa6e8e670ab.jpg';
-  }
-});
-
+if (sessionStorage.getItem("confirma_edad") == null) {
+  Swal.fire({
+    title: "Bienvenido a Pola del Pub",
+    text: "El exceso de alcohol es perjudicial para la salud. Prohíbase el expendio de bebidas embriagantes a menores de edad.",
+    showCancelButton: true,
+    confirmButtonColor: "#1c1d1d",
+    cancelButtonColor: "#1c1d1d",
+    confirmButtonText: "Tengo +18 años",
+    cancelButtonText: "Soy menor de edad",
+  }).then((result) => {
+    if (result.isConfirmed) {
+      sessionStorage.setItem("confirma_edad", 1);
+    } else {
+      // Si hace clic en el botón "Soy menor de edad", redirigirlo a otra página.
+      window.location.href =
+        "https://i.pinimg.com/564x/55/e8/42/55e8422f53f322c307443aa6e8e670ab.jpg";
+    }
+  });
+}
 
 /* slider */
 
@@ -110,8 +130,3 @@ function changeBackground() {
 }
 setInterval(changeBackground, 3000);
 changeBackground();
-
-
-
-
-      
