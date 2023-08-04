@@ -7,7 +7,7 @@ BtnPassword.addEventListener("click", function () {
   if (IpassValue == credentials.Username) {
     Swal.fire({
       title: "Perfecto",
-      text: "Nueva contraseña enviada!",
+      text: "El enlace para recuperar tu contraseña ha sido enviado!",
       imageUrl:
         "https://educacion30.b-cdn.net/wp-content/uploads/2019/06/homer.gif",
       imageWidth: 400,
